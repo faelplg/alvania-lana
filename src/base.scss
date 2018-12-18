@@ -1,6 +1,8 @@
-$backgroundColor: lightblue;
-body {
-  background-color: $backgroundColor;
-}
+@import './assets/theme/variables.scss';
+@import './assets/theme/typography.scss';
+@import './assets/theme/theme.scss';
 
-@import './assets/stylesheets/typography.scss';
+:root, html, body {
+  height: 100%;
+  margin: 0;
+}

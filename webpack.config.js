@@ -19,6 +19,12 @@ let config = {
       template: './src/index.html',
       minify: false
     }),
+    // new HtmlWebpackPlugin({
+    //     template: './src/about.html',
+    //     inject: true,
+    //     chunks: ['index'],
+    //     filename: 'about.html'
+    // }),
     new MiniCssExtractPlugin({
       filename: 'styles.css'
     })
