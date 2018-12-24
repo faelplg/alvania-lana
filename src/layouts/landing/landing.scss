@@ -1,0 +1,218 @@
+.grid__landing {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: min-content auto auto auto auto;
+}
+
+/*
+ * Landing Page - Header
+ */
+.section__header {
+  background-color: $mdc-theme-primary-hue-1;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.section__header .header__title {
+  flex: initial;
+  display: flex;
+  flex-flow: column;
+  padding: 16px 42px 24px;
+}
+.section__header .header__navigation {
+  flex: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  padding: 16px 42px 16px 16px;
+}
+
+/*
+ * Landing Page - Cover
+ */
+.section__cover  {
+  background-color: $mdc-theme-primary;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding: 42px 42px;
+}
+.section__cover .cover__concept {
+  flex: initial;
+}
+.section__cover .cover__picture {
+  flex: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.section__cover .cover__picture .picture {
+  background-color: #EEEEEE;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+}
+
+/*
+ * Landing Page - Services
+ */
+.section__services {
+  padding: 64px 32px;
+  background-color: #C1C1C1;
+}
+.grid__services {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 8px;
+  margin-bottom: 80px;
+}
+.service__type {
+  color: $mdc-theme-primary;
+  text-align: center;
+  font-size: 28px;
+  margin: 16px 0 4px 0;
+}
+.service__description {
+  text-align: center;
+  color: $mdc-theme-primary-hue-1;
+  font-size: 20px;
+  margin: 0 0 42px 0;
+}
+.service__container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.service {
+  height: 160px;
+  width: 160px;
+  background-color: #424242;
+  border-radius: 50%;
+  border: 3px solid $mdc-theme-secondary;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.service.material-icons {
+  font-size: 65px;
+  color: $mdc-theme-secondary;
+  fill: $mdc-theme-secondary;
+}
+.service__title {
+  color: $mdc-theme-primary;
+  margin: 16px 0 8px 0;
+}
+
+/*
+ * Landing Page - Gallery
+ */
+.section__gallery {
+  padding: 42px;
+}
+.gallery__header {
+  font-size: 30px;
+  font-weight: 300;
+}
+.grid__images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 8px 8px;
+  margin-bottom: 42px;
+}
+.image__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  background-color: white;
+}
+.grid__images .image__container img {
+  flex: initial;
+  max-height: 150px;
+  max-width: 200px;
+  cursor: pointer;
+}
+.grid__images .image__container img:hover {
+  opacity: .6;
+}
+
+/*
+ * Landing Page - Contact
+ */
+.section__contact {
+  padding: 42px;
+  background-color: #EEEEEE;
+  color: $mdc-theme-on-secondary;
+  fill: $mdc-theme-on-secondary;
+}
+.contact__header {
+  font-size: 30px;
+  font-weight: 300;
+}
+.contact__box {
+  display: flex;
+  flex-flow: row;
+}
+.contact__icon {
+  height: 80px;
+  width: 80px;
+  background-color: #BDBDBD;
+  border-radius: 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact__icon.material-icons {
+  font-size: 40px;
+  color: $mdc-theme-primary;
+}
+.contact__box {
+  margin: 32px;
+}
+.contact {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.contact__name {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 0 0 16px;
+}
+.contact__phone {
+  font-weight: 400;
+  font-size: 24px;
+  margin: 0 0 0 16px;
+}
+
+/*
+ * Landing Page - Footer
+ */
+.section__footer {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding: 32px;
+}
+.footer__business {
+  flex: initial;
+}
+.footer__copyright {
+  flex: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer__business p,
+.footer__copyright p {
+  margin: 0;
+}

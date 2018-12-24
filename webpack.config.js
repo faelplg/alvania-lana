@@ -36,12 +36,18 @@ let config = {
       loader: 'babel-loader'
     },{
       test: /\.(sa|sc|c)ss$/,
-      use: [
-        devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-        'css-loader',
-        'postcss-loader',
-        'sass-loader'
-      ]
+      use: [{
+        loader: devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+      },{
+        loader: 'css-loader'
+      },{
+        loader: 'postcss-loader'
+      },{
+        loader: 'sass-loader',
+        options: {
+          includePaths: ['./node_modules']
+        }
+      }]
     },{
       test: /\.html$/,
       loaders: [
@@ -52,7 +58,7 @@ let config = {
       loaders: [{
         loader: 'file-loader',
         options: {
-          name: 'assets/images/[name].[ext]'
+          name: 'assets/[name].[ext]'
         }
       }]
     }]

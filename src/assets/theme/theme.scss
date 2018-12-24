@@ -1,6 +1,10 @@
+@import './assets/theme/variables.scss';
+@import './assets/theme/typography.scss';
 
 body {
-  background-color: $backgroundColor;
-  color: white;
-  fill: white;
+  background-color: $mdc-theme-background;
+  color: $mdc-theme-on-primary;
+  fill: $mdc-theme-on-primary;
 }
+
+@import '@material/theme/mdc-theme';
