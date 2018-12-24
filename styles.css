@@ -236,6 +236,10 @@ body, div, section {
   flex-flow: row;
   align-items: center; }
 
+@media only screen and (max-width: 599px) {
+  .section__header {
+    flex-flow: column; } }
+
 .section__header .header__title {
   flex: initial;
   display: flex;
@@ -259,8 +263,16 @@ body, div, section {
   align-items: center;
   padding: 42px 42px; }
 
+@media only screen and (max-width: 940px) {
+  .section__cover {
+    flex-flow: column; } }
+
 .section__cover .cover__concept {
   flex: initial; }
+
+@media only screen and (max-width: 940px) {
+  .section__cover .cover__concept {
+    margin-bottom: 32px; } }
 
 .section__cover .cover__picture {
   flex: auto;
@@ -283,21 +295,35 @@ body, div, section {
  * Landing Page - Services
  */
 .section__services {
-  padding: 64px 32px;
-  background-color: #C1C1C1; }
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #C1C1C1;
+  padding: 64px 42px; }
 
-.grid__services {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[3];
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
-  grid-auto-rows: auto;
-  grid-gap: 8px;
-  margin-bottom: 80px; }
+.service__icons {
+  flex: initial;
+  display: flex;
+  flex-flow: row; }
+
+.icon__container {
+  margin: 16px; }
+
+.service__title {
+  color: #424242;
+  margin: 16px 0 8px 0;
+  text-align: center; }
+
+.service__info {
+  flex: auto;
+  color: #424242;
+  font-size: 24px;
+  margin: 0 42px;
+  width: 600px; }
 
 .service__type {
   color: #424242;
-  text-align: center;
   font-size: 28px;
   margin: 16px 0 8px 0;
   text-decoration: underline;
@@ -305,20 +331,13 @@ body, div, section {
           text-decoration-color: #fdd835; }
 
 .service__description {
-  text-align: center;
   color: #333333;
   font-size: 20px;
   margin: 0 0 42px 0; }
 
-.service__container {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center; }
-
 .service {
-  height: 160px;
-  width: 160px;
+  height: 120px;
+  width: 120px;
   background-color: #424242;
   border-radius: 50%;
   border: 3px solid #fdd835;
@@ -331,10 +350,6 @@ body, div, section {
   font-size: 65px;
   color: #fdd835;
   fill: #fdd835; }
-
-.service__title {
-  color: #424242;
-  margin: 16px 0 8px 0; }
 
 /*
  * Landing Page - Gallery
@@ -349,7 +364,7 @@ body, div, section {
 .grid__images {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: auto;
   grid-gap: 8px 8px;
   margin-bottom: 42px; }
