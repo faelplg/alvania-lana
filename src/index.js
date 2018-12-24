@@ -1,4 +1,9 @@
 import './base.scss';
+
+const gridLanding = document.querySelector('#grid__landing');
+gridLanding.className = 'hide';
+
+import alvaniaLeticia from './assets/images/alvania_leticia.jpg';
 import manuella01 from './assets/images/manuella_01.jpg';
 import manuella02 from './assets/images/manuella_02.jpg';
 import manuella03 from './assets/images/manuella_03.jpg';
@@ -21,3 +26,5 @@ const gallery = new Viewer(document.getElementById('images'));
 /* eslint-disable no-console */
 console.log('This is a gift from @faelplg.');
 /* eslint-enable no-console */
+
+gridLanding.className = gridLanding.className.replace(/\bhide\b/g, "");

@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
-    <div class="grid__landing">
+    <div id="grid__landing">
       <section class="section__header">
         <div class="header__title">
           <h1 id="business__name" class="text--center">Alvânia Lana</h1>
           <h3 id="business__description" class="text--center">Cerimonial</h3>
         </div>
         <div class="header__navigation">
-          <button class="mdc-button mdc-theme--secondary" type="button" name="Serviços">Serviços</button>
-          <button class="mdc-button mdc-theme--secondary" type="button" name="Contato">Eventos</button>
-          <button class="mdc-button mdc-theme--secondary" type="button" name="Contato">Contato</button>
+          <a href="#services" class="mdc-button mdc-theme--secondary" type="button" name="Serviços">Serviços</a>
+          <a href="#events" class="mdc-button mdc-theme--secondary" type="button" name="Contato">Eventos</a>
+          <a href="#contact" class="mdc-button mdc-theme--secondary" type="button" name="Contato">Contato</a>
         </div>
       </section>
 
@@ -27,14 +27,16 @@
         <div class="cover__concept">
           <h1 id="business__concept">Experiências em alto nível</h1>
           <h1 id="business__concept--sub">para seus eventos.</h1>
-          <button class="mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--on-secondary" type="button" name="Peça seu orçamento">Peça um orçamento</button>
+          <a href="#contact" class="mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--on-secondary" type="button" name="Peça seu orçamento">Peça um orçamento</a>
         </div>
         <div class="cover__picture">
-          <div class="picture"></div>
+          <div class="picture">
+            <img src="assets/images/alvania_leticia.jpg" alt="Alvânia e Letícia Lana">
+          </div>
         </div>
       </section>
 
-      <section class="section__services">
+      <section id="services" class="section__services">
         <h2 class="service__type">Cerimonial & Assessoria</h2>
         <p class="service__description">Oferecemos um serviço completo para seu evento, incluindo uma equipe experiente, os melhores buffets da cidade, salões de festa incríveis, </br>decoração com especialistas, cerimônia religiosa, dia do(a) noivo(a) e muito mais...</p>
         <div class="grid__services">
@@ -43,7 +45,7 @@
             <h2 class="service__title">Casamento</h2>
           </div>
           <div class="service__container">
-            <div class="service material-icons">local_bar</div>
+            <div class="service material-icons">card_giftcard</div>
             <h2 class="service__title">15 anos</h2>
           </div>
           <div class="service__container">
@@ -59,7 +61,7 @@
             <h2 class="service__title">Infantis</h2>
           </div>
           <div class="service__container">
-            <div class="service material-icons">school</div>
+            <div class="service material-icons">local_bar</div>
             <h2 class="service__title">Temáticas</h2>
           </div>
           <div class="service__container">
@@ -69,7 +71,7 @@
         </div>
       </section>
 
-      <section class="section__gallery">
+      <section id="events" class="section__gallery">
         <p class="contact__header">Conheça alguns de nossos <strong>eventos</strong>.</p>
         <div id="images" class="grid__images">
           <div class="image__container"><img src="assets/images/manuella_01.jpg" alt="Aniversário - Manuella"></div>
@@ -88,7 +90,7 @@
 
       </section>
 
-      <section class="section__contact">
+      <section id="contact" class="section__contact">
         <p class="contact__header">Entre em contato e tire suas dúvidas sobre como </br> <strong>transformar seu evento em uma experiência inesquecível.</strong></p>
         <div class="contact__box">
           <div class="contact__icon material-icons">alternate_email</div>
